@@ -13,7 +13,7 @@ namespace sqltest
         SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
         builder.DataSource = "sql-utbnord-reine.database.windows.net"; // Azure SQL Server Name
         builder.UserID = "reine.sundberg@edunord.se@sql-utbnord-reine.database.windows.net"; // User to connect to Azure
-        builder.Password = "H2ba4qu#!!"; // removed the password, password used in Azure
+        builder.Password = "**********"; // removed the password, password used in Azure
         builder.InitialCatalog = "BikeStores"; // Azure database name
 
         using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
